@@ -26,13 +26,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          rel="icon"
+          href="/logo.svg"
+          type="image/svg+xml"
+          sizes="any"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        
         <main className="w-full max-w-7xl p-10 space-y-5 mx-auto">{children}</main>
-
       </body>
     </html>
   );
