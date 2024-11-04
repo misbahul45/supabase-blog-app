@@ -11,9 +11,6 @@ export const createUser=async(userRegister:UserRegisterType)=>{
 
     const { confirmPassword, ...data }=userRegister
 
-
-    console.log(data)
-
     try {
         const user=await prisma.user.create({
             data:data
